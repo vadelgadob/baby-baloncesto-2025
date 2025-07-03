@@ -1,0 +1,43 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo degradado -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5F1E8;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="basketballPattern" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="25" cy="25" r="2" fill="#1A1A1A" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  <rect width="1200" height="630" fill="url(#basketballPattern)"/>
+  
+  <!-- Balón de baloncesto decorativo -->
+  <circle cx="1050" cy="150" r="80" fill="#FF6B35" opacity="0.3"/>
+  <circle cx="1050" cy="150" r="80" fill="none" stroke="#1A1A1A" stroke-width="3" opacity="0.2"/>
+  <line x1="970" y1="150" x2="1130" y2="150" stroke="#1A1A1A" stroke-width="2" opacity="0.2"/>
+  <line x1="1050" y1="70" x2="1050" y2="230" stroke="#1A1A1A" stroke-width="2" opacity="0.2"/>
+  
+  <!-- Texto principal -->
+  <text x="60" y="120" font-family="Inter, sans-serif" font-size="72" font-weight="900" fill="#1A1A1A">ZONAL</text>
+  <text x="60" y="200" font-family="Inter, sans-serif" font-size="72" font-weight="900" fill="#FF6B35">BABY</text>
+  <text x="60" y="280" font-family="Inter, sans-serif" font-size="72" font-weight="900" fill="#1A1A1A">BALONCESTO</text>
+  <text x="60" y="360" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="#FF6B35">NARIÑO 2025</text>
+  
+  <!-- Subtítulo -->
+  <text x="60" y="420" font-family="Inter, sans-serif" font-size="28" font-weight="600" fill="#1A1A1A">🏀 PROYECCIÓN BABY BALONCESTO 2026</text>
+  
+  <!-- Información adicional -->
+  <rect x="60" y="450" width="300" height="60" rx="10" fill="#FF6B35"/>
+  <text x="80" y="475" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="white">CATEGORÍAS</text>
+  <text x="80" y="495" font-family="Inter, sans-serif" font-size="20" font-weight="900" fill="white">2012 • 2013 • 2014</text>
+  
+  <rect x="380" y="450" width="280" height="60" rx="10" fill="#1A1A1A"/>
+  <text x="400" y="475" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="white">RAMAS</text>
+  <text x="400" y="495" font-family="Inter, sans-serif" font-size="20" font-weight="900" fill="white">FEMENINO • MASCULINO</text>
+  
+  <!-- Contacto -->
+  <text x="60" y="560" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A">📞 +57 315 321 5383 • +57 318 377 3718</text>
+</svg>

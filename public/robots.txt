@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Optimización específica para baby baloncesto
+Allow: /baby-baloncesto*
+
+# Bloquear archivos innecesarios
+Disallow: /api/
+Disallow: /_astro/
+Disallow: /admin/
+
+Sitemap: https://baby-baloncesto-narino.vercel.app/sitemap.xml
+
+# Crawl-delay para servidor gratuito
+Crawl-delay: 1

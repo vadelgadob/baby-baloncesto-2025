@@ -1,0 +1,249 @@
+---
+---
+
+<section class="py-16 bg-basketball-beige">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-black text-basketball-dark mb-4">
+        AFICHE OFICIAL
+      </h2>
+      <p class="text-xl text-gray-600 font-semibold">
+        Descarga y comparte el afiche oficial del <strong>baby baloncesto</strong>
+      </p>
+    </div>
+    
+    <div class="max-w-md mx-auto">
+      <!-- Contenedor del afiche con PhotoSwipe -->
+      <div class="poster-gallery" id="poster-gallery">
+        <a 
+          href="/poster-baby-baloncesto-narino-2025.jpg" 
+          data-pswp-width="720" 
+          data-pswp-height="1280"
+          class="poster-item group block cursor-pointer"
+          target="_blank"
+        >
+          <div class="relative overflow-hidden rounded-2xl shadow-2xl group-hover:shadow-3xl transform group-hover:scale-105 transition-all duration-300">
+            <!-- Placeholder mientras se sube el afiche real -->
+            <div class="aspect-[720/1280] bg-gradient-to-br from-basketball-orange via-orange-500 to-red-600 flex items-center justify-center text-white relative">
+              <!-- Efecto de textura de baloncesto -->
+              <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 25% 25%, #FF6B35 2px, transparent 2px), radial-gradient(circle at 75% 75%, #FF6B35 2px, transparent 2px); background-size: 30px 30px;"></div>
+              
+              <div class="text-center z-10 p-8">
+                <div class="text-6xl mb-4">🏀</div>
+                <div class="text-2xl font-black mb-2">BABY</div>
+                <div class="text-2xl font-black mb-2">BALONCESTO</div>
+                <div class="text-xl font-bold mb-4">NARIÑO 2025</div>
+                <div class="text-sm opacity-90 bg-black/20 rounded-lg p-2">
+                  Haz clic para ver en tamaño completo
+                </div>
+              </div>
+              
+              <!-- Icono de zoom -->
+              <div class="absolute top-4 right-4 bg-black/50 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <!-- Botones de acción -->
+      <div class="mt-8 space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <button 
+            onclick="downloadPoster()" 
+            class="bg-basketball-orange hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-colors duration-300 flex items-center justify-center space-x-2"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            <span>Descargar</span>
+          </button>
+          
+          <button 
+            onclick="sharePoster()" 
+            class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl transition-colors duration-300 flex items-center justify-center space-x-2"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+            </svg>
+            <span>Compartir</span>
+          </button>
+        </div>
+        
+        <div class="text-center">
+          <p class="text-sm text-gray-600 font-medium">
+            📱 Perfecto para compartir en WhatsApp y redes sociales
+          </p>
+          <p class="text-xs text-gray-500 mt-1">
+            Tamaño: 720x1280px - Formato vertical optimizado
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PhotoSwipe CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.css">
+
+<!-- PhotoSwipe JavaScript -->
+<script>
+  import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.js';
+  
+  // Inicializar PhotoSwipe
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#poster-gallery',
+    children: 'a',
+    pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.js'),
+    
+    // Configuración específica para el afiche
+    bgOpacity: 0.9,
+    showHideAnimationType: 'zoom',
+    
+    // Botones personalizados
+    toolbarButtons: [
+      'zoom',
+      'download',
+      'close'
+    ],
+    
+    // Configuración de zoom
+    initialZoomLevel: 'fit',
+    secondaryZoomLevel: 1.5,
+    maxZoomLevel: 3,
+    
+    // Configuración para móviles
+    pinchToClose: true,
+    closeOnVerticalDrag: true,
+    
+    // Configuración de descarga
+    downloadButton: true,
+    
+    // Personalización de la interfaz
+    padding: { top: 20, bottom: 40, left: 100, right: 100 },
+    
+    // Configuración responsive
+    returnFocus: false,
+    trapFocus: false,
+  });
+  
+  // Personalizar el título del afiche
+  lightbox.on('uiRegister', function() {
+    lightbox.pswp.ui.registerElement({
+      name: 'custom-caption',
+      order: 9,
+      isButton: false,
+      appendTo: 'root',
+      html: 'Caption text',
+      onInit: (el, pswp) => {
+        lightbox.pswp.on('change', () => {
+          const currSlideElement = lightbox.pswp.currSlide.data.element;
+          let captionHTML = '';
+          
+          captionHTML = `
+            <div class="pswp__custom-caption">
+              <h3>Baby Baloncesto Nariño 2025</h3>
+              <p>Afiche oficial del torneo - Categorías 2012, 2013, 2014</p>
+            </div>
+          `;
+          
+          el.innerHTML = captionHTML;
+        });
+      }
+    });
+  });
+  
+  lightbox.init();
+  
+  // Función para descargar el afiche
+  window.downloadPoster = function() {
+    const link = document.createElement('a');
+    link.href = '/poster-baby-baloncesto-narino-2025.jpg';
+    link.download = 'baby-baloncesto-narino-2025-afiche.jpg';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  
+  // Función para compartir el afiche
+  window.sharePoster = function() {
+    const shareData = {
+      title: 'Baby Baloncesto Nariño 2025',
+      text: '🏀 ¡Inscribe tu equipo al Baby Baloncesto Nariño 2025! Categorías 2012-2014. Contacto: +57 315 321 5383',
+      url: window.location.href
+    };
+    
+    if (navigator.share) {
+      navigator.share(shareData);
+    } else {
+      // Fallback para navegadores que no soportan Web Share API
+      const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(shareData.text + ' ' + shareData.url)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  };
+</script>
+
+<style>
+  /* Estilos personalizados para PhotoSwipe */
+  .pswp__custom-caption {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 16px;
+    text-align: center;
+  }
+  
+  .pswp__custom-caption h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    color: #FF6B35;
+  }
+  
+  .pswp__custom-caption p {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+  }
+  
+  /* Efecto hover mejorado */
+  .poster-item:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Animación de carga */
+  .poster-gallery {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive para móviles */
+  @media (max-width: 768px) {
+    .pswp__custom-caption {
+      margin: 8px;
+      padding: 12px;
+    }
+    
+    .pswp__custom-caption h3 {
+      font-size: 16px;
+    }
+    
+    .pswp__custom-caption p {
+      font-size: 12px;
+    }
+  }
+</style>

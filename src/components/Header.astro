@@ -1,0 +1,142 @@
+---
+---
+
+<header class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- Basketball texture background -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute inset-0 bg-gradient-to-br from-basketball-orange to-orange-600"></div>
+    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, #FF6B35 2px, transparent 2px), radial-gradient(circle at 75% 75%, #FF6B35 2px, transparent 2px); background-size: 50px 50px;"></div>
+  </div>
+  
+  <!-- Animated basketball -->
+  <div class="absolute top-6 right-6 md:top-10 md:right-10 animate-bounce-slow">
+    <div class="w-12 h-12 md:w-16 md:h-16 bg-basketball-orange rounded-full relative shadow-lg">
+      <div class="absolute inset-0 rounded-full border-2 border-basketball-dark opacity-30"></div>
+      <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-basketball-dark opacity-30"></div>
+      <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-basketball-dark opacity-30"></div>
+    </div>
+  </div>
+
+  <div class="relative z-10 text-center px-4 animate-fade-in w-full max-w-6xl mx-auto">
+    <!-- Espacio para el Logo del Torneo -->
+    <div class="mb-6 md:mb-8 flex justify-center">
+      <div class="logo-container bg-white/95 backdrop-blur-sm rounded-3xl p-4 md:p-6 shadow-2xl border-4 border-basketball-orange/20 hover:border-basketball-orange/40 transition-all duration-300">
+        <!-- Placeholder para el logo - Reemplazar con imagen real -->
+        <div class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto bg-gradient-to-br from-basketball-orange to-orange-600 rounded-2xl flex items-center justify-center shadow-lg">
+          <div class="text-center text-white">
+            <div class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-1 md:mb-2">🏀</div>
+            <div class="text-xs sm:text-sm md:text-base lg:text-lg font-black leading-tight">
+              <div>LOGO</div>
+              <div>TORNEO</div>
+            </div>
+          </div>
+        </div>
+        <!-- Instrucciones para reemplazar -->
+        <p class="text-xs sm:text-sm text-gray-600 mt-2 md:mt-3 font-medium">
+          Reemplazar con logo oficial
+        </p>
+      </div>
+    </div>
+    
+    <!-- Títulos principales -->
+    <div class="mb-6 md:mb-8">
+      <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-basketball-dark mb-2 md:mb-4 leading-tight">
+        <span class="block text-basketball-orange">BABY</span>
+        <span class="block">BALONCESTO</span>
+        <span class="block text-basketball-orange">NARIÑO 2025</span>
+      </h1>
+    </div>
+    
+    <!-- Información del torneo -->
+    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 shadow-2xl max-w-4xl mx-auto">
+      <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-basketball-dark mb-3 md:mb-4">
+        🏀 TORNEO OFICIAL DE BABY BALONCESTO
+      </h2>
+      
+      <!-- Grid responsivo para categorías y ramas -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 text-base sm:text-lg md:text-xl font-semibold mb-4 md:mb-6">
+        <div class="bg-basketball-orange text-white rounded-lg p-3 md:p-4">
+          <div class="text-xs sm:text-sm opacity-90">CATEGORÍAS</div>
+          <div class="text-lg sm:text-xl md:text-2xl font-black">2012 • 2013 • 2014</div>
+        </div>
+        <div class="bg-basketball-dark text-white rounded-lg p-3 md:p-4">
+          <div class="text-xs sm:text-sm opacity-90">RAMAS</div>
+          <div class="text-lg sm:text-xl md:text-2xl font-black">FEMENINO • MASCULINO</div>
+        </div>
+      </div>
+      
+      <!-- Texto SEO para Baby Baloncesto -->
+      <div class="text-center">
+        <p class="text-base sm:text-lg md:text-xl font-bold text-basketball-dark mb-2">
+          🏆 <strong>Baby Baloncesto</strong> Oficial en Nariño
+        </p>
+        <p class="text-sm sm:text-base text-gray-600 font-medium">
+          Inscribe tu equipo de <strong>baby baloncesto</strong> ahora
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  /* Animaciones mejoradas */
+  .logo-container {
+    animation: logoFloat 4s ease-in-out infinite;
+  }
+  
+  @keyframes logoFloat {
+    0%, 100% { 
+      transform: translateY(0px) scale(1); 
+    }
+    50% { 
+      transform: translateY(-8px) scale(1.02); 
+    }
+  }
+  
+  /* Mejoras responsivas adicionales */
+  @media (max-width: 640px) {
+    header {
+      min-height: 100vh;
+      padding: 1rem 0;
+    }
+    
+    .logo-container {
+      animation-duration: 3s;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      min-height: 100vh;
+    }
+    
+    h1 {
+      line-height: 0.9;
+    }
+  }
+  
+  /* Mejoras para tablets */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .logo-container {
+      animation-duration: 5s;
+    }
+  }
+  
+  /* Mejoras para pantallas grandes */
+  @media (min-width: 1200px) {
+    .logo-container {
+      animation-duration: 6s;
+    }
+  }
+  
+  /* Efecto hover mejorado para el logo */
+  .logo-container:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Transiciones suaves */
+  .logo-container {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+</style>

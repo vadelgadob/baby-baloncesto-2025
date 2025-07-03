@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import ContactSection from '../components/ContactSection.astro';
+import PosterGallery from '../components/PosterGallery.astro';
+import Sponsors from '../components/Sponsors.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Baby Baloncesto Nariño 2025 - Torneo Oficial de Baby Baloncesto">
+  <Header />
+  <ContactSection />
+  <PosterGallery />
+  <Sponsors />
+  <Footer />
+</Layout>
+
+<style>
+  /* Animaciones adicionales */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+</style>

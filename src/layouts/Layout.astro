@@ -1,0 +1,129 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const siteUrl = "https://baby-baloncesto-narino.vercel.app";
+const siteName = "Baby Baloncesto Nariño 2025";
+const description = "🏀 Baby Baloncesto Nariño 2025 - Torneo oficial de baby baloncesto. Categorías 2012, 2013, 2014. Ramas femenino y masculino. ¡Inscribe tu equipo ahora! Contacto WhatsApp disponible.";
+const keywords = "baby baloncesto, baby baloncesto Nariño, baby baloncesto 2025, baby baloncesto Colombia, torneo baby baloncesto, inscripción baby baloncesto, equipos baby baloncesto, baby baloncesto femenino, baby baloncesto masculino";
+const imageUrl = `${siteUrl}/og-image.jpg`;
+---
+
+<!doctype html>
+<html lang="es-CO">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <!-- SEO Optimizado para Baby Baloncesto -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="Corporación Social y Deportiva Los Paisitas de Medellín" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href={siteUrl} />
+    
+    <!-- Geo Tags para Colombia/Nariño -->
+    <meta name="geo.region" content="CO-NAR" />
+    <meta name="geo.placename" content="Nariño, Colombia" />
+    <meta name="geo.position" content="1.2136;-77.2811" />
+    <meta name="ICBM" content="1.2136, -77.2811" />
+    
+    <!-- Open Graph Optimizado -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:title" content="🏀 Baby Baloncesto Nariño 2025 - Torneo Oficial" />
+    <meta property="og:description" content="Torneo oficial de baby baloncesto en Nariño. Categorías 2012-2014, ramas femenino y masculino. ¡Inscribe tu equipo! Contacto WhatsApp: +57 315 321 5383" />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Baby Baloncesto Nariño 2025 - Torneo de baby baloncesto categorías 2012, 2013, 2014" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:secure_url" content={imageUrl} />
+    
+    <!-- Twitter Card Optimizado -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={siteUrl} />
+    <meta name="twitter:title" content="🏀 Baby Baloncesto Nariño 2025" />
+    <meta name="twitter:description" content="Torneo oficial de baby baloncesto. Categorías 2012-2014. ¡Inscribe tu equipo! WhatsApp: +57 315 321 5383" />
+    <meta name="twitter:image" content={imageUrl} />
+    <meta name="twitter:image:alt" content="Baby Baloncesto Nariño 2025" />
+    
+    <!-- WhatsApp y Telegram optimizado -->
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:updated_time" content="2025-01-27T10:00:00Z" />
+    
+    <!-- Favicon y iconos -->
+    <link rel="icon" type="image/svg+xml" href="/basketball-favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#FF6B35" />
+    <meta name="msapplication-TileColor" content="#FF6B35" />
+    
+    <!-- Preload crítico -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" as="style" />
+    
+    <!-- Datos estructurados JSON-LD para Baby Baloncesto -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsEvent",
+      "name": "Baby Baloncesto Nariño 2025",
+      "alternateName": "Zonal Baby Baloncesto Nariño 2025",
+      "description": "Torneo oficial de baby baloncesto en Nariño, Colombia. Categorías 2012, 2013, 2014. Ramas femenino y masculino.",
+      "startDate": "2025-02-01",
+      "endDate": "2025-11-30",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Nariño",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Nariño",
+          "addressCountry": "Colombia"
+        }
+      },
+      "organizer": {
+        "@type": "SportsOrganization",
+        "name": "Corporación Social y Deportiva Los Paisitas de Medellín",
+        "telephone": "+573153215383",
+        "url": "https://wa.me/573153215383"
+      },
+      "sport": "Basketball",
+      "image": "https://baby-baloncesto-narino.vercel.app/og-image.jpg",
+      "url": "https://baby-baloncesto-narino.vercel.app",
+      "keywords": "baby baloncesto, Nariño, Colombia, 2025",
+      "inLanguage": "es-CO"
+    }
+    </script>
+    
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-display">
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #F5F1E8 0%, #FFFFFF 100%);
+  }
+</style>
